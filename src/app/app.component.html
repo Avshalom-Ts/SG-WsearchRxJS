@@ -1,0 +1,6 @@
+<!-- The Api request -->
+<!-- https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space -->
+<div class="container">
+  <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+  <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
+</div>
