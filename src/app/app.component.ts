@@ -7,7 +7,7 @@ import { WikipediaService } from './wikipedia.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  pages = {};
+  pages = [{}];
 
   constructor(private wikipedia: WikipediaService) {}
   onTerm(term: string) {
